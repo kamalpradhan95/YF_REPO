@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ICICI Bank</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/login.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"> </script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/login.js"></script>
+
+</head>
+<body>
+<div class="navbar-wrapper">
+    <div class="container-fluid">
+        <nav class="navbar navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="https://infinity.icicibank.com/corp/L001/consumer/images/DisplayImage_CompanyLogo.jpg"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#" class="">Home</a></li>
+                        <li class=" dropdown">
+                            <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Banking <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class=" dropdown">
+                                    <a href="jj.html" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Personal Banking</a>
+                                </li>
+                                <li><a href="#">Personal Banking</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="addnew.html">Add New</a></li>
+                        <li class=" dropdown"><a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Managers <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">View Managers</a></li>
+                                <li><a href="#">Add New</a></li>
+                            </ul>
+                        </li>
+                        <li class=" dropdown"><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Staff <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">View Staff</a></li>
+                                <li><a href="#">Add New</a></li>
+                                <li><a href="#">Bulk Upload</a></li>
+                            </ul>
+                        </li>
+                        <li class=" down"><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HR <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Change Time Entry</a></li>
+                                <li><a href="#">Report</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav pull-right">
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Change Password</a></li>
+                                <li><a href="#">My Profile</a></li>
+                            </ul>
+                        </li>
+                        <li class=""><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- ================ INICIA FORMULARIO DE LOGIN ============================================================== -->    
+<div class="container">
+    
+<div class="row" style="margin-top:60px">
+    <div class="col-md-5">
+    	<form role="form" action="fetch_user.jsp" method="post">
+			<fieldset>
+				<h2>Login to Internet Banking</h2>
+				<hr class="colorgraph">
+				<div class="form-group">
+                    <input type="text" name="user" id="email" class="form-control input-lg" placeholder="User ID">
+				</div>
+				<div class="form-group">
+                    <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password">
+				</div>
+				<hr class="colorgraph">
+				<div class="row">
+					<div class="col-xs-6 col-sm-6 col-md-6">
+                        <input type="submit" class="btn btn-lg btn-success btn-block" value="Log In">
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-6">
+                        <input type="submit" class="btn btn-link pull-right" value="Forgot Password ?">
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<div class="col-md-5 col-md-offset-1">
+	   <h2>May I help you ?</h2>
+	   <P>New User? Get UserId</P>
+	   <P>Password? Get UserId</P>
+	<div>
+
+	</div>
+</div>
+
+</div> 
+</body> 
+</html>
